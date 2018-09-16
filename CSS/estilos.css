@@ -1,0 +1,188 @@
+*{margin: 0;padding: 0}
+body{
+  background-color: black;
+
+}
+.wrapper{
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+}
+header{
+  width: 100%;
+  overflow: hidden;
+  background-color: #5b7989;
+  border-radius:  10px 10px 0 0;
+}
+
+header .Comienzo{
+  margin-left: 20px;
+  color: #fff;
+  font-size: 25px;
+  float: left;
+  line-height: 100px;
+  text-shadow: 2px 2px #02010a;
+  font-family: 'Dancing Script';
+}
+header nav{
+  float: right;
+  line-height: 100px;
+}
+header nav a{
+  display:inline-block;
+  color: #fff;
+  line-height: normal;
+  text-shadow: 2px 2px #02010a;
+  font-family: 'Dancing Script';
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+
+}
+.Contenedor {
+  background-color: #82c3a6;
+  height: auto;
+}
+.ImagenCentral img{
+  margin: auto;
+  padding: 0;
+  display: block;
+  width: 700px;
+  border-right: 2px solid black ;
+
+}
+#ImagenSecundaria{
+background-color: #d5c75f;
+height: 500px;
+padding-top: 20px;
+display: flex;
+flex-flow: row rap;
+
+}
+
+.ImagenIzquierda img{
+  order: 1;
+  flex-grow: 2;
+  max-height: 400px;
+  padding: 20px;
+  border: 2px;
+  float: right;
+  background: 2px #82c3a6;
+
+
+}
+
+.ImagenDerecha img{
+  order: 2;
+  flex-grow: 2;
+  max-height: 400px;
+  padding: 20px;
+  float: left;
+}
+
+.ImagenIzquierda, .ImagenDerecha{
+margin: auto;
+text-align: center;
+font-size: 25px;
+font-family: 'Dancing Script';
+color: #fff;
+
+}
+
+
+
+#PiedePagina{
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  background-color: #C6d5c5;
+  display: flex;
+  flex-grow: row rap;
+  font-family: 'Dancing Script';
+  border-radius: 0 0 10px 10px;
+}
+.Bloque1{
+  order: 1;
+  flex-grow: 1;
+  text-align:justify ;
+  padding-left: 10px;
+
+
+}
+.Bloque2{
+  order: 2;
+  flex-grow: 1;
+  text-align:justify ;
+  padding-left: 10px;
+}
+.Bloque3{
+  order: 2;
+  flex-grow: 1;
+  text-align:justify ;
+  padding-left: 10px;
+}
+.Bloque4{
+  order: 2;
+  flex-grow: 1;
+  text-align:justify ;
+  padding-left: 10px;
+}
+
+#Superior
+{
+  background-color: #d5c75f;
+
+  padding-top: 20px;
+  display: flex;
+  flex-flow: row rap;
+}
+.Imagen1{
+ padding: 20px;
+  flex-grow: 1;
+  order: 1;
+}
+.Imagen2{
+  padding: 20px;
+  flex-grow: 1;
+  order: 2;
+}
+.Imagen3{
+  padding: 20px;
+  flex-grow: 1;
+  order: 3;
+}
+.Imagen1, .Imagen2, .Imagen3{
+  margin: auto;
+
+}
+
+#Inferior
+{
+  background-color: #d5c75f;
+
+  padding-top: 20px;
+  display: flex;
+  flex-flow: row rap;
+}
+.Imagen4{
+  padding: 20px;
+  flex-grow: 1;
+  order: 1;
+}
+.Imagen5{
+  padding: 20px;
+  flex-grow: 1;
+  order: 2;
+}
+.Imagen6{
+  padding: 20px;
+  flex-grow: 1;
+  order: 3;
+}
+.Imagen4, .Imagen5, .Imagen6{
+  margin: auto;
+}
