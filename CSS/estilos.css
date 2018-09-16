@@ -3,12 +3,7 @@ body{
   background-color: black;
 
 }
-.wrapper{
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
-  overflow: hidden;
-}
+
 header{
   width: 100%;
   overflow: hidden;
@@ -41,16 +36,19 @@ header nav a{
   margin-right: 10px;
 
 }
-.Contenedor {
+#ImagenCentral {
   background-color: #82c3a6;
-  height: auto;
+  display: flex;
+  flex-flow: row rap;
+  padding: 20px;
+
+
 }
-.ImagenCentral img{
+#ImagenCentral img{
   margin: auto;
-  padding: 0;
-  display: block;
   width: 700px;
-  border-right: 2px solid black ;
+  border:  2px  solid black ;
+  order: 1;
 
 }
 #ImagenSecundaria{
@@ -66,10 +64,10 @@ flex-flow: row rap;
   order: 1;
   flex-grow: 2;
   max-height: 400px;
-  padding: 20px;
+  margin: 20px;
   border: 2px;
   float: right;
-  background: 2px #82c3a6;
+
 
 
 }
@@ -78,7 +76,7 @@ flex-flow: row rap;
   order: 2;
   flex-grow: 2;
   max-height: 400px;
-  padding: 20px;
+  margin: 20px;
   float: left;
 }
 
@@ -185,4 +183,28 @@ color: #fff;
 }
 .Imagen4, .Imagen5, .Imagen6{
   margin: auto;
+}
+
+
+
+@keyframes ImagenSecundaria-rotate {
+  from {
+    transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(10deg);
+      }
+      from {
+    		border: 1px solid #02010a;
+    	}
+    	to {
+    		border: 4px solid #82c3a6 ;
+    	}
+    }
+
+#ImagenSecundaria .ImagenIzquierda img:hover{
+  animation-name: ImagenSecundaria-rotate;
+  animation-duration: 2s;
+  border: 2px solid #02010a;
+	animation-duration: 2s;
 }
