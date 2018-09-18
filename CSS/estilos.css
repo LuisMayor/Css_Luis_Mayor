@@ -4,20 +4,16 @@ body{
   max-width: 90%;
   margin-left: 5%;
 }
-#Centro{
-flex-flow: row rap;
-justify-content: center;
 
-}
-header{
+#Cabecera{
   width: 100%;
   overflow: hidden;
   background-color: #5b7989;
   border-radius:  10px 10px 0 0;
 }
 
-header .Comienzo{
-  margin-left: 20px;
+#Cabecera .Comienzo{
+  margin-left: 5%;
   color: #fff;
   font-size: 25px;
   float: left;
@@ -25,11 +21,11 @@ header .Comienzo{
   text-shadow: 2px 2px #02010a;
   font-family: 'Dancing Script';
 }
-header nav{
+#Cabecera nav{
   float: right;
   line-height: 100px;
 }
-header nav a{
+#Cabecera nav a{
   display:inline-block;
   color: #fff;
   line-height: normal;
@@ -52,14 +48,12 @@ header nav a{
 }
 #ImagenCentral img{
   margin: auto;
-  width: 700px;
   border:  2px  solid black ;
   order: 1;
 
 }
 #ImagenSecundaria{
 background-color: #d5c75f;
-
 padding-top: 20px;
 display: flex;
 flex-flow: row rap;
@@ -70,7 +64,7 @@ margin: auto;
 .ImagenIzquierda img{
   order: 1;
   flex-grow: 1;
-  border: 2px;
+  border: 2px solid black;
   float: right;
 }
 
@@ -95,33 +89,33 @@ color: #fff;
   color: black;
   text-align: center;
   width: 100%;
-  height: 400px;
+
   background-color: #C6d5c5;
   display: flex;
   flex-grow: row rap;
   font-family: 'Dancing Script';
   border-radius: 0 0 10px 10px;
 }
-.Bloque1{
+#Bloque1{
   order: 1;
   flex-grow: 1;
   text-align:left;
   padding-left: 10px;
 
 }
-.Bloque2{
+#Bloque2{
   order: 2;
   flex-grow: 1;
   text-align:left ;
   padding-left: 10px;
 }
-.Bloque3{
+#Bloque3{
   order: 3;
   flex-grow: 1;
   text-align:left ;
   padding-left: 10px;
 }
-.Bloque4{
+#Bloque4{
   order: 4;
   flex-grow: 1;
   text-align:left ;
@@ -167,17 +161,18 @@ order: 2;
 .Imagen4{
 
   flex-grow: 1;
-  order: 1;
+  order: 4;
 }
 .Imagen5{
 
   flex-grow: 1;
-  order: 2;
+  order: 5;
 }
 .Imagen6{
 
   flex-grow: 1;
-  order: 3;
+  order: 6;
+
 }
 .Imagen4, .Imagen5, .Imagen6{
   margin: auto;
@@ -188,6 +183,7 @@ order: 2;
 -ms-filter: grayscale(100%);
 -o-filter: grayscale(100%);
 filter: grayscale(100%);
+
 }
 @keyframes ImagenSecundaria-rotate {
   from {
@@ -250,4 +246,65 @@ filter: grayscale(100%);
 #ImagenSecundaria .ImagenDerecha img:hover{
   animation-name: ImagenSecundaria-Desplazamiento;
   animation-duration: 2s;
+}
+@keyframes header-slide {
+  0%{
+    position:relative;
+    margin-top: 150%;
+  }
+  60%{
+    position: relative;
+    margin-top: -5%;
+  }
+  100%{
+    position: relative;
+    margin-top: 0%;
+  }
+}
+header{
+  animation-name: header-slide;
+  animation-duration: 3s;
+}
+@media(max-width:900px){
+body{
+width: 100%;
+margin: 2%;
+
+}
+img{
+  width: 100%;
+  }
+  #Cabecera {
+    flex-direction: column;
+  }
+   h1{
+    text-align: center;
+    }
+    nav{
+      text-align: center;
+    }
+  #ImagenSecundaria {
+    flex-direction: column;
+  }
+  #Superior {
+    flex-direction: column;
+  }
+  #Inferior{
+    flex-direction: column;
+  }
+#PiedePagina{
+  flex-direction: column;
+}
+  #Bloque1 {
+    flex-direction: column;
+  }
+  #Bloque2 {
+    flex-direction: column;
+  }
+  #Bloque3 {
+    flex-direction: column;
+  }
+  #Bloque4 {
+    flex-direction: column;
+  }
 }
